@@ -1,56 +1,126 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f7f7f7;
-  color: #333;
+  background: #f4f6f3;
+  color: #2a2a2a;
 }
 
 header {
-  background: #5c8a5c;
+  background: #6f9e6e;
   color: white;
-  padding: 30px;
+  padding: 55px 20px;
   text-align: center;
+}
+
+.tagline {
+  font-size: 1.15em;
+  opacity: 0.95;
+  margin: 10px auto 0;
+  max-width: 700px;
 }
 
 nav {
-  background: #eee;
-  padding: 10px;
+  background: #e8eee6;
+  padding: 12px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none;
-  color: #333;
+  color: #2f5b35;
   font-weight: bold;
+  padding: 7px 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background: #d7e8d5;
 }
 
 section {
-  padding: 30px;
-  max-width: 800px;
-  margin: auto;
+  padding: 35px 22px;
+  max-width: 900px;
+  margin: 28px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
 }
 
-.animal {
-  background: white;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 6px;
+section h2 {
+  color: #2f5b35;
+  margin-top: 0;
+}
+
+.hero-buttons {
+  margin-top: 18px;
+}
+
+.button {
+  display: inline-block;
+  background: #ffffff;
+  color: #2f5b35;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 8px 6px 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.85);
+  box-shadow: none;
+}
+
+.button-outline:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 18px;
+}
+
+.card {
+  background: #f7fbf7;
+  border: 2px dashed #cfe4cf;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+}
+
+.pill {
+  display: inline-block;
+  margin-top: 10px;
+  background: #d7e8ff;
+  color: #1f3b66;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 0.85em;
+  font-weight: bold;
 }
 
 footer {
-  background: #333;
+  background: #2f5b35;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 16px;
+  margin-top: 35px;
 }
-.button {
-  display: inline-block;
-  background: #6f9e6e;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 10px;
-}
+
